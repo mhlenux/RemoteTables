@@ -1,0 +1,30 @@
+﻿<Window x:Class="ClientWindowUI.ClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientWindowUI"
+        mc:Ignorable="d"
+        Title="Client Window"
+        Width="200"
+        Height="200"
+        SizeToContent="WidthAndHeight"
+        Closed="Window_Closed"
+        Background="Transparent" 
+        WindowStyle="SingleBorderWindow"
+        ShowInTaskbar="True"
+        ResizeMode="NoResize">
+    <Grid>
+        <Image x:Name="theImage" Width="200" Height="200"/>
+        <TextBlock  x:Name="OpenHoldemInfo" 
+         HorizontalAlignment="Left" 
+         VerticalAlignment="Bottom"
+                   Margin="15"
+                    Background="Black"
+                    Foreground="White">
+            <TextBlock.Effect>
+                <DropShadowEffect ShadowDepth="0" Color="White" BlurRadius="5" />
+            </TextBlock.Effect>
+        </TextBlock>
+    </Grid>
+</Window>
